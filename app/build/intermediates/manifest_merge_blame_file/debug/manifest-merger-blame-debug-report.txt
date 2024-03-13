@@ -1,0 +1,183 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.imageclassification"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:5:5-7:36
+12        android:name="android.hardware.camera"
+12-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:6:9-47
+13        android:required="false" />
+13-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:7:9-33
+14
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:9:5-80
+15-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:10:5-64
+16-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:10:22-62
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:7:5-79
+17-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:7:22-76
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:8:5-67
+18-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:8:22-64
+19
+20    <permission
+20-->[androidx.core:core:1.9.0] C:\Users\iamad\.gradle\caches\transforms-3\f5ed42a2195d7465c348744e7f5bf8a9\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+21        android:name="com.example.imageclassification.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.9.0] C:\Users\iamad\.gradle\caches\transforms-3\f5ed42a2195d7465c348744e7f5bf8a9\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.9.0] C:\Users\iamad\.gradle\caches\transforms-3\f5ed42a2195d7465c348744e7f5bf8a9\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.example.imageclassification.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.9.0] C:\Users\iamad\.gradle\caches\transforms-3\f5ed42a2195d7465c348744e7f5bf8a9\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.9.0] C:\Users\iamad\.gradle\caches\transforms-3\f5ed42a2195d7465c348744e7f5bf8a9\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+25
+26    <application
+26-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:11:5-26:19
+27        android:allowBackup="true"
+27-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:12:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.9.0] C:\Users\iamad\.gradle\caches\transforms-3\f5ed42a2195d7465c348744e7f5bf8a9\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:13:9-43
+32        android:label="@string/app_name"
+32-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:14:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:15:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:16:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.ImageClassification" >
+36-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:17:9-57
+37        <activity
+37-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:18:9-25:20
+38            android:name="com.example.imageclassification.MainActivity"
+38-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:18:19-47
+39            android:exported="true" >
+39-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:19:13-36
+40            <intent-filter>
+40-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:20:13-24:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:21:17-69
+41-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:21:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:23:17-77
+43-->C:\Users\iamad\OneDrive\Desktop\Android projects\app\src\main\AndroidManifest.xml:23:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <service
+47-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:11:9-17:19
+48            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+48-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:12:13-91
+49            android:directBootAware="true"
+49-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:17:13-43
+50            android:exported="false" >
+50-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:13:13-37
+51            <meta-data
+51-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:14:13-16:85
+52                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
+52-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:15:17-126
+53                android:value="com.google.firebase.components.ComponentRegistrar" />
+53-->[com.google.mlkit:translate:17.0.2] C:\Users\iamad\.gradle\caches\transforms-3\04f1b57549f9e3d02e8749410b08f5c3\transformed\jetified-translate-17.0.2\AndroidManifest.xml:16:17-82
+54            <meta-data
+54-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:20:13-22:85
+55                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+55-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:21:17-120
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:22:17-82
+57        </service>
+58
+59        <provider
+59-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:9:9-13:38
+60            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+60-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:10:13-78
+61            android:authorities="com.example.imageclassification.mlkitinitprovider"
+61-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:11:13-69
+62            android:exported="false"
+62-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:12:13-37
+63            android:initOrder="99" />
+63-->[com.google.mlkit:common:18.10.0] C:\Users\iamad\.gradle\caches\transforms-3\408e4f21030791662d0cbb57a1269af0\transformed\jetified-common-18.10.0\AndroidManifest.xml:13:13-35
+64
+65        <activity
+65-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\iamad\.gradle\caches\transforms-3\ed2584849f117b6da358d899ed3defa1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+66            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+66-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\iamad\.gradle\caches\transforms-3\ed2584849f117b6da358d899ed3defa1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+67            android:exported="false"
+67-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\iamad\.gradle\caches\transforms-3\ed2584849f117b6da358d899ed3defa1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+68-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\iamad\.gradle\caches\transforms-3\ed2584849f117b6da358d899ed3defa1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+69
+70        <meta-data
+70-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\iamad\.gradle\caches\transforms-3\8efba6236c03a4eac2c8d74745294776\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+71            android:name="com.google.android.gms.version"
+71-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\iamad\.gradle\caches\transforms-3\8efba6236c03a4eac2c8d74745294776\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+72            android:value="@integer/google_play_services_version" />
+72-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\iamad\.gradle\caches\transforms-3\8efba6236c03a4eac2c8d74745294776\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+73
+74        <provider
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iamad\.gradle\caches\transforms-3\5eefbb99aaea7cb46d86f3e4499045c6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+75            android:name="androidx.startup.InitializationProvider"
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iamad\.gradle\caches\transforms-3\5eefbb99aaea7cb46d86f3e4499045c6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+76            android:authorities="com.example.imageclassification.androidx-startup"
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iamad\.gradle\caches\transforms-3\5eefbb99aaea7cb46d86f3e4499045c6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+77            android:exported="false" >
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iamad\.gradle\caches\transforms-3\5eefbb99aaea7cb46d86f3e4499045c6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+78            <meta-data
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iamad\.gradle\caches\transforms-3\5eefbb99aaea7cb46d86f3e4499045c6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iamad\.gradle\caches\transforms-3\5eefbb99aaea7cb46d86f3e4499045c6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+80                android:value="androidx.startup" />
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iamad\.gradle\caches\transforms-3\5eefbb99aaea7cb46d86f3e4499045c6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+81            <meta-data
+81-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iamad\.gradle\caches\transforms-3\1a862b9b8289abf2c818ab9cb86166c9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+82                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+82-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iamad\.gradle\caches\transforms-3\1a862b9b8289abf2c818ab9cb86166c9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+83                android:value="androidx.startup" />
+83-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iamad\.gradle\caches\transforms-3\1a862b9b8289abf2c818ab9cb86166c9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+84        </provider>
+85
+86        <service
+86-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\iamad\.gradle\caches\transforms-3\89f2e7d9d8f9ca610e311a9aec8d6e2c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+87            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+87-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\iamad\.gradle\caches\transforms-3\89f2e7d9d8f9ca610e311a9aec8d6e2c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+88            android:exported="false" >
+88-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\iamad\.gradle\caches\transforms-3\89f2e7d9d8f9ca610e311a9aec8d6e2c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+89            <meta-data
+89-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\iamad\.gradle\caches\transforms-3\89f2e7d9d8f9ca610e311a9aec8d6e2c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+90                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+90-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\iamad\.gradle\caches\transforms-3\89f2e7d9d8f9ca610e311a9aec8d6e2c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+91                android:value="cct" />
+91-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\iamad\.gradle\caches\transforms-3\89f2e7d9d8f9ca610e311a9aec8d6e2c\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+92        </service>
+93        <service
+93-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\iamad\.gradle\caches\transforms-3\5cba9e5807d5054a5497c4e041d8309a\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+94            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+94-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\iamad\.gradle\caches\transforms-3\5cba9e5807d5054a5497c4e041d8309a\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+95            android:exported="false"
+95-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\iamad\.gradle\caches\transforms-3\5cba9e5807d5054a5497c4e041d8309a\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+96            android:permission="android.permission.BIND_JOB_SERVICE" >
+96-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\iamad\.gradle\caches\transforms-3\5cba9e5807d5054a5497c4e041d8309a\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+97        </service>
+98
+99        <receiver
+99-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\iamad\.gradle\caches\transforms-3\5cba9e5807d5054a5497c4e041d8309a\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+100            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+100-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\iamad\.gradle\caches\transforms-3\5cba9e5807d5054a5497c4e041d8309a\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+101            android:exported="false" />
+101-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\iamad\.gradle\caches\transforms-3\5cba9e5807d5054a5497c4e041d8309a\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+102    </application>
+103
+104</manifest>

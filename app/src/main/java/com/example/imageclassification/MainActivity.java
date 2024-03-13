@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     EditText inputEd;
     TextView resultTv;
     Button translateBtn;
+    Translator englishHindiTranslator;
+
+    boolean isAvailable = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,14 +41,71 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Create an English-urdu translator:
+        // Create an English-Hindi translator:
+
+        TranslatorOptions options =
+                new TranslatorOptions.Builder()
+                        .setSourceLanguage(TranslateLanguage.ENGLISH)
+                        .setTargetLanguage(TranslateLanguage.HINDI)
+                        .build();
+        englishHindiTranslator =
+                Translation.getClient(options);
+
+
+        DownloadConditions conditions = new DownloadConditions.Builder()
+                .requireWifi()
+                .build();
+        englishHindiTranslator.downloadModelIfNeeded(conditions)
+                .addOnSuccessListener(
+                        new OnSuccessListener() {
+                            @Override
+                            public void onSuccess(Object o) {
+                                isAvailable = true;
+                            }
+                        }).addOnFailureListener(
+                        new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+
+                            }
+                        }
+
+                );
+
+
 
     }
 
 
     //TODO perform translation
+
+
     public void doTextTranslation(String text){
 
+        if(isAvailable)
+        {
+            englishHindiTranslator.translate(text)
+                    .addOnSuccessListener(
+                            new OnSuccessListener() {
+                                @Override
+                                public void onSuccess(Object translatedText) {
+                                    resultTv.setText(translatedText.toString());
+                                }
+                            }).addOnFailureListener(
+                            new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+
+                                }
+                            }
+
+                    );
+
+        }
+        else
+        {
+            Toast.makeText(this, "Text not downloaded", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
